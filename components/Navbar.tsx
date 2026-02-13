@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, Activity } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { NAV_LINKS } from '../constants';
 
 const Navbar: React.FC = () => {
@@ -8,7 +8,7 @@ const Navbar: React.FC = () => {
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement | HTMLDivElement>, href: string) => {
     e.preventDefault();
     setIsOpen(false);
-    
+
     // Special handling for "Home" or empty hrefs to scroll to top
     if (href === '#home' || href === '#') {
       window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -26,16 +26,17 @@ const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20 items-center">
           {/* Logo */}
-          <div 
-            className="flex-shrink-0 flex items-center gap-2 cursor-pointer" 
+          <div
+            className="flex-shrink-0 flex items-center gap-2 cursor-pointer"
             onClick={(e) => handleScroll(e, '#home')}
           >
-            {/* Logo Icon matching the blue/cyan brand color */}
-            <div className="bg-sky-600 p-2 rounded-lg text-white">
-              <Activity size={24} />
-            </div>
+            <img
+              src="/img/logoStudioFisiosan.png"
+              alt="Studio Fisiosan Logo"
+              className="h-14 w-auto"
+            />
             <span className="font-bold text-2xl text-slate-800 tracking-tight">
-              Fisio<span className="text-sky-600">san</span>
+              Studio<span className="text-sky-600">Fisiosan</span>
             </span>
           </div>
 

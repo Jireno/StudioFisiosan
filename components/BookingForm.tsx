@@ -69,6 +69,17 @@ const BookingForm: React.FC = () => {
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
+
+    // Blocca sabato e domenica
+    if (name === 'date' && value) {
+      const day = new Date(value).getDay();
+      if (day === 0 || day === 6) {
+        setErrors(prev => ({ ...prev, date: "Non è possibile prenotare di sabato o domenica" }));
+        setFormData(prev => ({ ...prev, date: '' }));
+        return;
+      }
+    }
+
     setFormData(prev => ({ ...prev, [name]: value }));
     if (errors[name]) {
       setErrors(prev => {
@@ -82,10 +93,17 @@ const BookingForm: React.FC = () => {
   // Helper to generate time slots
   const generateTimeSlots = () => {
     const slots = [];
-    for (let i = 9; i < 19; i++) {
+    // Mattina: 8:00 - 12:30
+    for (let i = 8; i <= 12; i++) {
       slots.push(`${i}:00`);
       slots.push(`${i}:30`);
     }
+    // Pomeriggio: 14:00 - 18:00
+    for (let i = 14; i <= 17; i++) {
+      slots.push(`${i}:00`);
+      slots.push(`${i}:30`);
+    }
+    slots.push('18:00');
     return slots;
   };
 

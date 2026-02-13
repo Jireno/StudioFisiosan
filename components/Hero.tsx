@@ -14,8 +14,8 @@ const Hero: React.FC = () => {
     <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay - Using a blue-toned medical image */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=80"
+        <img
+          src="/img/landscape.png"
           alt="Studio Fisiosan Interni"
           className="w-full h-full object-cover"
         />
@@ -33,7 +33,7 @@ const Hero: React.FC = () => {
           Valutazione ecografica, K-Laser, Onde d'Urto e percorsi di recupero mirati.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center sm:justify-start">
-          <a 
+          <a
             href="#prenota"
             onClick={(e) => handleScroll(e, '#prenota')}
             className="px-8 py-4 bg-sky-600 hover:bg-sky-500 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 flex items-center justify-center gap-2"
@@ -41,7 +41,7 @@ const Hero: React.FC = () => {
             Prenota una visita
             <ArrowRight size={20} />
           </a>
-          <a 
+          <a
             href="#terapie"
             onClick={(e) => handleScroll(e, '#terapie')}
             className="px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 font-semibold rounded-lg transition-all flex items-center justify-center"

@@ -22,8 +22,8 @@ export const PROFESSIONALS: Professional[] = [
     id: 1,
     name: "Dr. Lucio Santaniello",
     role: "Fisioterapista Titolare",
-    bio: "Esperto in terapia manuale, riabilitazione post-chirurgica e utilizzo di tecnologie avanzate come K-Laser e Onde d'Urto. Si occupa personalmente di tutti i trattamenti e percorsi riabilitativi.",
-    imageUrl: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" // Placeholder for the real doctor photo
+    bio: "Attivi dal 2005, esperti in terapia manuale, riabilitazione post-chirurgica e utilizzo di tecnologie avanzate come K-Laser e Onde d'Urto. Specializzati nella cura della spalla (protesi, cuffia dei rotatori), rieducazione post intervento e in contatto con i migliori chirurghi specialisti della spalla.",
+    imageUrl: "/img/Lucio Santana.png"
   }
 ];
 
@@ -80,9 +80,8 @@ export const THERAPIES: Therapy[] = [
 ];
 
 export const HOURS: WorkingHours[] = [
-  { day: "Lunedì - Venerdì", hours: "08:30 – 19:30" },
-  { day: "Sabato", hours: "09:00 – 13:00" },
-  { day: "Domenica", hours: "Chiuso" }
+  { day: "Lunedì - Venerdì", hours: "08:00 – 12:30 / 14:00 – 18:00" },
+  { day: "Si lavora su appuntamento", hours: "" }
 ];
 
 export const VISIT_TYPES = Object.values(VisitType);
@@ -133,19 +132,19 @@ export const GALLERY_IMAGES: GalleryImage[] = [
   {
     id: 4,
     src: "/img/studio-4.jpeg",
-    alt: "Macchinario Laserterapia Avanzata",
-    category: "Tecnologia"
+    alt: "Ingresso Principale Esterno",
+    category: "Ambiente"
   },
   {
     id: 5,
     src: "/img/studio-5.jpeg",
-    alt: "Strumentazione Tecarterapia",
-    category: "Tecnologia"
+    alt: "Attrezzatura per la riabilitazione",
+    category: "Palestra"
   },
   {
     id: 6,
     src: "/img/studio-6.jpeg",
-    alt: "Palestra riabilitativa con spalliere",
+    alt: "Riabilitazione Ortopedica e Posturale",
     category: "Palestra"
   }
 ];
