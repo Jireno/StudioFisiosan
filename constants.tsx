@@ -78,7 +78,7 @@ export const THERAPIES: Therapy[] = [
     shortDescription: "Ginnastica correttiva e recupero funzionale.",
     fullDescription: "Percorsi di riabilitazione in palestra attrezzata con spalliere e macchinari specifici per correggere vizi posturali e recuperare il movimento.",
     icon: Move,
-    imageUrl: "/img/posturale.jpeg"
+    imageUrl: "/img/posturale.png"
   },
   {
     id: 7,
