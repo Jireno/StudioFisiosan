@@ -42,7 +42,12 @@ export interface GalleryImage {
 export enum VisitType {
   VALUTAZIONE = "Valutazione Iniziale",
   RIABILITAZIONE = "Riabilitazione Post-Operatoria",
-  TECAR = "Tecartherapia",
-  LASER = "Laserterapia",
-  MASSAGGIO = "Massaggio Terapeutico"
+  RIEDUCAZIONE_POSTURALE = "Rieducazione Posturale",
+  MASSAGGIO = "Massaggio Terapeutico",
+  TECAR = "Tecarterapia",
+  LASER = "Laserterapia / K-Laser",
+  ONDE_URTO = "Onde d'Urto / V-Actor",
+  IDROGALVANOTERAPIA = "Idrogalvanoterapia",
+  MAGNETOTERAPIA = "Magnetoterapia",
+  ULTRASUONI = "Ultrasuoni"
 }
