@@ -4,7 +4,7 @@ import { Activity, Home } from 'lucide-react';
 const OtherServices: React.FC = () => {
   const services = [
     {
-      title: "Noleggio Macchinari Finetek",
+      title: "Noleggio Macchinari Kinetec",
       description: "Ideale per la riabilitazione degli arti inferiori direttamente a casa tua.",
       icon: Activity,
     },
