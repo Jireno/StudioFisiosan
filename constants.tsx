@@ -4,7 +4,10 @@ import {
   Move,
   Waves,
   ScanLine,
-  Target
+  Target,
+  Magnet,
+  Sun,
+  Radio
 } from 'lucide-react';
 import { Professional, Therapy, WorkingHours, VisitType, Testimonial, GalleryImage } from './types';
 
@@ -38,9 +41,9 @@ export const THERAPIES: Therapy[] = [
   },
   {
     id: 2,
-    title: "Onde d'Urto",
+    title: "Onde d'Urto \\ V-Actor",
     shortDescription: "Soluzione non invasiva per calcificazioni e tendiniti.",
-    fullDescription: "Trattamento d'elezione per spina calcaneare, calcificazioni di spalla, epicondiliti e dolori cervicali. Stimola la rigenerazione tissutale.",
+    fullDescription: "Trattamento d'elezione per spina calcaneare, calcificazioni di spalla, epicondiliti e dolori cervicali. Stimola la rigenerazione tissutale. Inoltre V-Actor utilizza vibrazioni pneumatiche ad alta frequenza per rilassare muscoli e connettivo, stimolare la circolazione e trattare il dolore muscolare, in particolare quello cronico.",
     icon: Target,
     imageUrl: "/img/onde-urto.jpeg",
     position: "object-center"
@@ -76,6 +79,30 @@ export const THERAPIES: Therapy[] = [
     fullDescription: "Percorsi di riabilitazione in palestra attrezzata con spalliere e macchinari specifici per correggere vizi posturali e recuperare il movimento.",
     icon: Move,
     imageUrl: "/img/posturale.jpeg"
+  },
+  {
+    id: 7,
+    title: "Magnetoterapia",
+    shortDescription: "Terapia con campi magnetici per la rigenerazione ossea e tissutale.",
+    fullDescription: "Utilizza i campi elettro-magnetici per favorire la rigenerazione dei tessuti, in particolare del tessuto osseo dopo fratture, e per contrastare l'osteoporosi e le infiammazioni.",
+    icon: Magnet,
+    imageUrl: "/img/magnetoterapia.jpeg"
+  },
+  {
+    id: 8,
+    title: "Laserterapia",
+    shortDescription: "Trattamento antinfiammatorio e antidolorifico mirato.",
+    fullDescription: "Sfrutta l'energia della luce laser per stimolare i processi di riparazione cellulare, molto efficace per tendiniti, strappi muscolari, e dolori articolari acuti.",
+    icon: Sun,
+    imageUrl: "/img/laserterapia.jpeg"
+  },
+  {
+    id: 9,
+    title: "Ultrasuoni",
+    shortDescription: "Micromassaggio termico e meccanico profondo.",
+    fullDescription: "Impiega onde acustiche ad alta frequenza per generare un effetto termico e micromassaggiante nei tessuti profondi, ideale per calcificazioni, edemi e contratture.",
+    icon: Radio,
+    imageUrl: "/img/ultrasuoni.jpeg"
   }
 ];
 

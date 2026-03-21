@@ -41,7 +41,6 @@ export interface GalleryImage {
 
 export enum VisitType {
   VALUTAZIONE = "Valutazione Iniziale",
-  TERAPIA_MANUALE = "Terapia Manuale",
   RIABILITAZIONE = "Riabilitazione Post-Operatoria",
   TECAR = "Tecartherapia",
   LASER = "Laserterapia",

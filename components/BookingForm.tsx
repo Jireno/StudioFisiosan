@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { VISIT_TYPES } from '../constants';
-import { CheckCircle, AlertCircle } from 'lucide-react';
+import { CheckCircle, AlertCircle, Info } from 'lucide-react';
 
 const BookingForm: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -233,6 +233,17 @@ const BookingForm: React.FC = () => {
               {errors.time && <p className="mt-1 text-sm text-red-500 flex items-center gap-1"><AlertCircle size={12} /> {errors.time}</p>}
             </div>
 
+            {/* Visita Specialistica Info */}
+            <div className="md:col-span-2">
+              <div className="bg-sky-50 border border-sky-100 rounded-lg p-4 mb-2 flex items-start gap-3">
+                <Info className="text-sky-600 shrink-0 mt-0.5" size={20} />
+                <p className="text-sm text-sky-800">
+                  È possibile richiedere una visita specialistica con il fisiatra <strong>Dott. A. Pepe</strong>. 
+                  Se desideri prenotarla, specificalo dettagliandolo qui sotto nelle <em>Note Aggiuntive</em>.
+                </p>
+              </div>
+            </div>
+
             {/* Notes */}
             <div className="md:col-span-2">
               <label className="block text-sm font-medium text-slate-700 mb-2">Note Aggiuntive</label>
@@ -242,7 +253,7 @@ const BookingForm: React.FC = () => {
                 onChange={handleChange}
                 rows={3}
                 className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-4 focus:ring-sky-200 focus:border-sky-500 focus:outline-none transition-all"
-                placeholder="Descrivi brevemente il tuo problema o lascia un messaggio..."
+                placeholder="Descrivi brevemente il tuo problema o lascia un messaggio (es. 'Richiedo visita fisiatra Dott. A. Pepe')..."
               ></textarea>
             </div>
           </div>
