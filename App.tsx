@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import Professionals from './components/Professionals';
 import Hours from './components/Hours';
 import Therapies from './components/Therapies';
+import OtherServices from './components/OtherServices';
 import BookingForm from './components/BookingForm';
 import Footer from './components/Footer';
 import Gallery from './components/Gallery';
@@ -18,6 +19,7 @@ function App() {
         <Hero />
         <Professionals />
         <Therapies />
+        <OtherServices />
         <Gallery />
         <Testimonials />
         <Hours />
