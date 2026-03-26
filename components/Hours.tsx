@@ -18,7 +18,7 @@ const Hours: React.FC = () => {
               <div className="space-y-4">
                 {HOURS.map((item, idx) => (
                   <div key={idx} className="flex justify-between items-center border-b border-sky-800 pb-3 last:border-0 last:pb-0">
-                    <span className="font-medium flex items-center gap-3">
+                    <span className="font-medium flex items-center gap-3 whitespace-nowrap">
                       <Calendar size={18} className="text-sky-400" />
                       {item.day}
                     </span>
