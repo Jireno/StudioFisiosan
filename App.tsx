@@ -8,7 +8,6 @@ import OtherServices from './components/OtherServices';
 import BookingForm from './components/BookingForm';
 import Footer from './components/Footer';
 import Gallery from './components/Gallery';
-import Testimonials from './components/Testimonials';
 
 function App() {
   return (
@@ -21,7 +20,6 @@ function App() {
         <Therapies />
         <OtherServices />
         <Gallery />
-        <Testimonials />
         <Hours />
         <BookingForm />
       </main>
