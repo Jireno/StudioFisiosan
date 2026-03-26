@@ -28,14 +28,14 @@ const Footer: React.FC = () => {
                <div className="p-2 bg-slate-800 rounded-full">
                  <Mail size={18} className="text-sky-400" />
                </div>
-               <span>fisiosan@email.it</span>
+               <span>fisiosan@virgilio.it</span>
              </div>
 
              <div className="flex items-center gap-3 justify-center md:justify-start hover:text-white transition-colors">
                <div className="p-2 bg-slate-800 rounded-full">
                  <MapPin size={18} className="text-sky-400" />
                </div>
-               <span>Baronissi (SA)</span>
+               <span className="capitalize">via murate 5/13, giffoni valle piana</span>
              </div>
           </div>
 
